@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphics</title>
+
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Header Design -->
+    <header>
+      <div class="logo">
+        <img src="images/logo-removebg-preview.png" alt="Graphics Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="hero">
+        <h1>Welcome to <span class="highlight">Graphics</span></h1>
+        <p>Your creative design solutions.</p>
+        <a href="#portfolio" class="btn">View Portfolio</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Us</h2>
+      <p>We are a design studio dedicated to creating visually stunning graphics for clients worldwide.</p>
+      <img src="images/image1.png" alt="About Us" />
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <a href="graphic-design.html" class="service">
+        <div>
+          <i class="bx bxs-paint"></i>
+          <h3>Graphic Design</h3>
+          <p>Creating custom graphics tailored to your brand.</p>
+        </div>
+      </a>
+
+      <a href="web-development.html" class="service">
+        <div>
+          <i class="bx bx-code-alt"></i>
+          <h3>Web Development</h3>
+          <p>Modern and responsive websites designed to your needs.</p>
+        </div>
+      </a>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <div class="portfolio-item" data-id="1">
+        <img src="images/portfolio2.jpg" alt="Project 1" />
+        <p>Project 1: Web Development</p>
+      </div>
+      <div class="portfolio-item" data-id="2">
+        <img src="images/portfolio4.jpg" alt="Project 2" />
+        <p>Project 2: Graphic Design</p>
+      </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="submit.php" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          rows="4"
+          required
+        ></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer role="contentinfo">
+      <p>&copy; 2024 Graphics. All rights reserved.</p>
+      <div class="social-icons">
+        <a
+          href="https://www.facebook.com/profile.php?id=61565769968932&mibextid=LQQJ4d"
+          aria-label="Facebook"
+          ><i class="bx bxl-facebook"></i
+        ></a>
+        <a href="https://twitter.com" aria-label="Twitter"
+          ><i class="bx bxl-twitter"></i
+        ></a>
+        <a href="https://instagram.com/man_like_secshan" aria-label="Instagram"
+          ><i class="bx bxl-instagram"></i
+        ></a>
+      </div>
+    </footer>
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      // Example ScrollReveal initialization
+      ScrollReveal().reveal('.service', { delay: 200, distance: '50px' });
+    </script>
+
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      // Example Typed.js initialization
+      new Typed('.highlight', {
+        strings: ['Graphics', 'Design Solutions'],
+        typeSpeed: 100,
+        backSpeed: 50,
+        loop: true,
+      });
+    </script>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
